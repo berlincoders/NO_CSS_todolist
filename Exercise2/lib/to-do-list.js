@@ -10,17 +10,22 @@ const todos = [
 
 
 const template = document.querySelector('#todoItemTemplate');
+console.log(template);
 
 const container=document.querySelector("#todosContainer")
+console.log(container);
 
+const clone =template.content.cloneNode(true); //Clonando  elemento "todo"
+console.log(clone);
 
-console.log(clon)
+// now you can inspect the browser to unsdestand what clonNode(true) is doing for you
+
 
 todos.forEach((todo)=>{
 
-  const clon =template.content.cloneNode(true); //Clonando  elemento "todo"
+  const clone =template.content.cloneNode(true); //Clonando  elemento "todo"
 
-  document.querySelector("#title").textContent =todo.title; //assign title
+  clone.querySelector(".title").textContent = todo.title; //assign title carefull is a class
 
   if (todo.done == true){
 
@@ -28,7 +33,6 @@ todos.forEach((todo)=>{
     checkbok.checked = true;
   }
 
-  Container.appendChild(clone);
-
+  container.appendChild(clone);
 
 });
