@@ -26,8 +26,8 @@
 <body class="bg-light">
 
   <template>
-    <div class="shadow-sm rounded px-4 py-3 mb-2 border d-flex">
-      <input class="d-flex form-check-input me-1" type="checkbox">
+    <div class="d-flex  mb-1">  <!--minimalistic CSS-->
+      <input  class="d-flex me-2" type="checkbox">
       <div id="title">  to do title</div>
     </div>
   </template>
@@ -35,9 +35,10 @@
   <div class="row justify-content-center mt-4">
     <div class="col-lg-4 bg-white rounded shadow-sm p-5">
       <h1 class="mb-3">🗒 My Todo List</h1>
-      <div id="todosContainer">
 
+      <div id="todosContainer">
       </div>
+
     </div>
   </div>
 
@@ -45,5 +46,32 @@
   <!-- Import your own javascript -->
   <script src="lib/to-do-list.js" type="module"></script>
 </body>
+<!--
+<div> element with classes:
+
+class="shadow-sm rounded px-4 py-3 mb-2 border d-flex":
+ This div has multiple classes applied to it, likely for styling purposes.
+
+shadow-sm: Adds a small shadow to the element.
+rounded: Rounds the corners of the element.
+px-4: Adds horizontal padding of 4 units.
+py-3: Adds vertical padding of 3 units.
+mb-2: Adds margin-bottom of 2 units.
+border: Adds a border to the element.
+d-flex: Makes the element a flex container.
+<input> element:
+
+class="d-flex form-check-input me-1":
+This is an input element with multiple classes.
+
+d-flex: Makes the input element a flex item.
+form-check-input: This class is commonly used in Bootstrap for styling checkboxes.
+me-1: Adds a right margin of 1 unit.
+<div> element with id="title":
+
+Contains the text "to do title" and may be used for the title of the to-do item.
+-->
+
+
 
 </html>
