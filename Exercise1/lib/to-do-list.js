@@ -7,11 +7,16 @@ const todos = [
 
 
 const template = document.querySelector('template');
+console.log(template);
+
 const container = document.querySelector('#todosContainer');
+console.log(container);
 
 todos.forEach((todo) => {
   // Clone the content of the template
   const clone = template.content.cloneNode(true);
+
+  console.log(clone);
 
   // Set the title of the to-do item in the cloned template
   clone.querySelector("#title").textContent = todo.title;

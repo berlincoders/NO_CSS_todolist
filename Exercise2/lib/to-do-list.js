@@ -15,8 +15,8 @@ console.log(template);
 const container=document.querySelector("#todosContainer")
 console.log(container);
 
-const clone =template.content.cloneNode(true); //Clonando  elemento "todo"
-console.log(clone);
+//const clone =template.content.cloneNode(true); //Clonando  elemento "todo"
+//console.log(clone);
 
 // now you can inspect the browser to unsdestand what clonNode(true) is doing for you
 
